@@ -2,10 +2,9 @@
 
 Required terraform version = "1.16.5"
 
-before configuring s3 as the remote backend make sure it exists before running the `terraform init` command. 
+before configuring s3 as the remote backend, make sure it exists before running the `terraform init` command. 
 
-while using the terraform init command make sure it's required variables are present in the `secrets.backend.tfvars` file. 
-since the s3 bucket name and key are sensitive values and should not be passed into public repos.
+while using the terraform init command, make sure the required variables are present in the `secrets.backend.tfvars` file., because the s3 bucket name and key are sensitive values and should not be passed into public repos.
 
 once done terraform can be initialized with the following command:
 ```bash
